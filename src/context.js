@@ -77,7 +77,11 @@ const AppProvider = ({ children }) => {
     setCorrect(0);
     setWaiting(true);
   };
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuiz({ ...quiz, [name]: value });
+  };
   const handleSubmit = (e) => {};
 
   // useEffect(() => {
