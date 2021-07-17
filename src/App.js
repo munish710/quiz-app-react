@@ -24,10 +24,10 @@ function App() {
   const answers = [...incorrect_answers, correct_answer];
   return (
     <main>
-      {/* <Modal /> */}
+      <Modal />
       <section className="quiz">
         <p className="correct-answers">
-          correct answers : {correct}/ {index}
+          correct answers : {correct}/ {index + 1}
         </p>
         <article className="container">
           <h2 dangerouslySetInnerHTML={{ __html: question }} />
