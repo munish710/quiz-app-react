@@ -1,5 +1,7 @@
 import React from "react";
 import questions from "../assets/illustrations/questions.svg";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <section className="section page hero">
@@ -16,7 +18,9 @@ const Home = () => {
             <br />
             Explore different categories or Create your own quiz.
           </p>
-          <button className="btn">Explore Now</button>
+          <button className="btn">
+            <Link to="/explore">Explore Now</Link>
+          </button>
         </div>
       </div>
     </section>
