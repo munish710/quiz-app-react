@@ -268,7 +268,7 @@ navbar
 
 .logo {
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-1);
   display: flex;
   align-items: center;
 }
@@ -326,7 +326,7 @@ Footer
 */
 
 .footer {
-  background: var(--clr-primary-6);
+  background: var(--clr-primary-2);
   color: var(--clr-white);
 }
 .code {
@@ -411,17 +411,17 @@ Quiz Questions
 .page {
   min-height: calc(100vh - 5.45rem);
 }
-.quiz {
-  /* width: 90vw; */
+/* .quiz {
+  width: 90vw;
   max-width: var(--max-width);
-  /* margin: 4rem auto; */
+  margin: 4rem auto;
   background: var(--clr-white);
   border-radius: var(--radius);
   padding: 3rem;
 }
 .quiz-small {
   max-width: 500px;
-}
+} */
 .container h2 {
   margin-bottom: 2rem;
   text-align: center;
@@ -514,7 +514,7 @@ trending quizes
     display: block;
   }
   .trending-quizes {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
 }
 
@@ -527,7 +527,7 @@ Quiz Card
   display: grid;
   grid-template-rows: 1fr auto auto;
   min-height: 25rem;
-  width: 350px;
+  width: 330px;
   background: var(--clr-grey-10);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -538,7 +538,7 @@ img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   height: 15rem;
-  width: 100%;
+  width: 330px;
   object-fit: cover;
 }
 .card-info {
@@ -561,8 +561,9 @@ Form
 ===============
 */
 
-.setup-form h2 {
-  margin-bottom: 2rem;
+.setup-form {
+  padding: 1rem;
+  padding-top: 2rem;
 }
 .form-control {
   margin-bottom: 2rem;
@@ -571,14 +572,16 @@ Form
   display: block;
   text-transform: capitalize;
   font-weight: 500;
+  font-size: 1rem;
   color: var(--clr-grey-3);
   margin-bottom: 0.5rem;
 }
 .form-input {
   border: none;
+  outline: none;
   background: var(--clr-grey-10);
   font-size: 1rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.45rem 0.5rem;
   width: 100%;
   border-radius: var(--radius);
 }
@@ -590,6 +593,27 @@ Form
   width: 100%;
   margin-top: 3rem;
 }
+
+@media screen and (min-width: 700px) {
+  .form-control {
+    display: flex;
+    align-items: center;
+  }
+  .form-control label {
+    font-size: 1.125rem;
+    width: 50%;
+  }
+
+  .form-input {
+    width: 50%;
+  }
+  .submit-btn {
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+}
+
 /*
 =============== 
 Loading
