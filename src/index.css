@@ -344,7 +344,7 @@ Footer
 
 .footer-icon {
   color: var(--clr-white);
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   margin-right: 2rem;
 }
 
@@ -359,7 +359,7 @@ Quiz
 */
 
 .page {
-  min-height: calc(100vh - 5.63rem);
+  min-height: calc(100vh - 5.45rem);
 }
 .quiz {
   width: 90vw;
