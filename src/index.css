@@ -148,6 +148,10 @@ p {
   max-width: var(--max-width);
 }
 
+.page {
+  min-height: calc(100vh - 5.36rem);
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -334,7 +338,7 @@ Footer
 }
 
 .footer-center {
-  padding: 0.5rem;
+  padding: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,14 +346,14 @@ Footer
 }
 
 .footer p {
-  font-size: 1.2rem;
   color: var(--clr-white);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 .footer-icon {
   color: var(--clr-white);
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   margin-right: 2rem;
 }
 
@@ -408,20 +412,6 @@ Quiz Questions
 ===============
 */
 
-.page {
-  min-height: calc(100vh - 5.45rem);
-}
-/* .quiz {
-  width: 90vw;
-  max-width: var(--max-width);
-  margin: 4rem auto;
-  background: var(--clr-white);
-  border-radius: var(--radius);
-  padding: 3rem;
-}
-.quiz-small {
-  max-width: 500px;
-} */
 .container h2 {
   margin-bottom: 2rem;
   text-align: center;
@@ -474,13 +464,14 @@ Quiz Questions
   letter-spacing: var(--spacing);
   font-size: 1rem;
   background: #ffb100;
-  color: var(--clr-black);
+  color: var(--clr-grey-2);
   transition: var(--transition);
   cursor: pointer;
 }
-.next-question:hover {
-  background: #805900;
-  color: #ffb100;
+.next-question,
+.submit-btn:hover {
+  background: #f5d07c;
+  /* color: var(--clr-white); */
 }
 
 /*
