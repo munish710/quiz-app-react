@@ -1,5 +1,5 @@
 import React from "react";
-import questions from "../assets/questions.svg";
+import questions from "../assets/illustrations/questions.svg";
 const Home = () => {
   return (
     <section className="section page hero">

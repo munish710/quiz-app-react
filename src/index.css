@@ -38,7 +38,7 @@ Variables
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 0.45rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -399,7 +399,7 @@ Hero
 
 /*
 =============== 
-Quiz
+Quiz Questions
 ===============
 */
 
@@ -477,6 +477,44 @@ Quiz
   background: #805900;
   color: #ffb100;
 }
+
+/*
+=============== 
+Quiz Card
+===============
+*/
+.quiz-card {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  min-height: 25rem;
+  width: 300px;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+img {
+  display: block;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-info {
+  padding: 0.5rem;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.card-footer > p {
+  margin-bottom: 0;
+}
+
 /*
 =============== 
 Form

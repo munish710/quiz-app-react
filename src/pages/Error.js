@@ -1,5 +1,5 @@
 import React from "react";
-import error_404 from "../assets/error_404.svg";
+import error_404 from "../assets/illustrations/error_404.svg";
 const Error = () => {
   return (
     <section className="section page hero">

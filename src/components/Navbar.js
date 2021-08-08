@@ -7,11 +7,7 @@ import {
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { BsQuestionCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
-//Logo----------Home, Explore, Favorites, --------Login/Logout
-//mobile add close on link click
 
 function Navbar() {
   const [showNavLinks, setShowNavLinks] = useState(false);
