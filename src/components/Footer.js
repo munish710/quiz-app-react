@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className=" footer">
       <div className="section-center footer-center">
         <p>
-          Made with <span className="code">&lt; / &gt;</span> by Munish Thakur
+          Made with <span className="code">&lt;/&gt;</span> by Munish Thakur
         </p>
         <div className="footer-icons">
           <a href="" target="_blank" className="footer-icon">
