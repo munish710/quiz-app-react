@@ -463,8 +463,8 @@ Quiz Questions
   font-weight: 700;
   letter-spacing: var(--spacing);
   font-size: 1rem;
-  background: #ffb100;
-  color: var(--clr-grey-2);
+  background: #f5c044;
+  color: var(--clr-grey-1);
   transition: var(--transition);
   cursor: pointer;
 }

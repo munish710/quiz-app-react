@@ -104,6 +104,7 @@ const AppProvider = ({ children }) => {
         quiz,
         handleChange,
         handleSubmit,
+        fetchQuestions,
       }}
     >
       {children}
