@@ -408,6 +408,30 @@ Hero
 
 /*
 =============== 
+rules
+===============
+*/
+.rules {
+  max-width: 80vw;
+  width: 500px;
+  border: 2px solid var(--clr-primary-5);
+  font-weight: 500;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.rules p {
+  margin-bottom: 0.5rem;
+}
+
+.rules h4 {
+  color: var(--clr-primary-1);
+}
+
+/*
+=============== 
 Quiz Questions
 ===============
 */

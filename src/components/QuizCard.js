@@ -1,5 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context/context";
+import { Link } from "react-router-dom";
+
 const QuizCard = ({ image_url, title, info, questions, quiz_url }) => {
   const { fetchQuestions } = useGlobalContext();
   const setupQuiz = () => {
@@ -15,7 +17,7 @@ const QuizCard = ({ image_url, title, info, questions, quiz_url }) => {
       <div className="card-footer">
         <p>{questions} questions</p>
         <button className="btn" onClick={setupQuiz}>
-          Take Quiz
+          <Link to="/quiz">Take Quiz</Link>
         </button>
       </div>
     </article>

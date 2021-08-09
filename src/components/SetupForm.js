@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context/context";
+import { Link } from "react-router-dom";
 
 const SetupForm = () => {
   const { quiz, handleChange, handleSubmit, error } = useGlobalContext();
@@ -58,7 +59,7 @@ const SetupForm = () => {
           </p>
         )}
         <button type="submit" onClick={handleSubmit} className="submit-btn">
-          Start Quiz
+          <Link to="/quiz">Start Quiz</Link>
         </button>
       </form>
     </div>
