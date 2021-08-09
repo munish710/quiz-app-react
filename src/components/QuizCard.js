@@ -3,8 +3,9 @@ import { useGlobalContext } from "../context/context";
 import { Link } from "react-router-dom";
 
 const QuizCard = ({ image_url, title, info, questions, quiz_url }) => {
-  const { fetchQuestions } = useGlobalContext();
+  const { fetchQuestions, setQuizTitle } = useGlobalContext();
   const setupQuiz = () => {
+    setQuizTitle(title);
     fetchQuestions(quiz_url);
   };
   return (

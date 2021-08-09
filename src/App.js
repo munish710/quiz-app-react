@@ -11,7 +11,6 @@ import Error from "./pages/Error";
 import SetupForm from "./components/SetupForm";
 import Loading from "./components/Loading";
 import Modal from "./components/Modal";
-import Question from "./components/Question";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 function App() {

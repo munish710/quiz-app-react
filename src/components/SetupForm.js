@@ -59,7 +59,7 @@ const SetupForm = () => {
           </p>
         )}
         <button type="submit" onClick={handleSubmit} className="submit-btn">
-          <Link to="/quiz">Start Quiz</Link>
+          <Link to="/quiz">Take Quiz</Link>
         </button>
       </form>
     </div>

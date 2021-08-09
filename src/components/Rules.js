@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context/context";
 
-const Rules = () => {
+const Rules = ({ setShowRules }) => {
   const { questions } = useGlobalContext();
   return (
     <div className="rules">
@@ -11,6 +11,9 @@ const Rules = () => {
       <p>There is no negative marking</p>
       <p>You need 60% marks to pass</p>
       <p>All the best.</p>
+      <button className="btn" onClick={() => setShowRules(false)}>
+        Start Quiz
+      </button>
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useGlobalContext } from "../context/context";
 
 const Quiz = () => {
-  const { questions, index, correct, nextQuestion, checkAnswer } =
+  const { questions, index, correct, nextQuestion, checkAnswer, quizTitle } =
     useGlobalContext();
   const { question, incorrect_answers, correct_answer } = questions[index];
 
@@ -14,13 +14,18 @@ const Quiz = () => {
     answers.push(answers[tempIndex]);
     answers[tempIndex] = correct_answer;
   }
+
   return (
-    <section className="quiz">
-      <p className="correct-answers">
-        correct answers : {correct}/ {index + 1}
-      </p>
+    <div className="quiz">
+      <h3 className="title">{quizTitle}</h3>
+      <div className="quiz-header">
+        <p>
+          Q: {index + 1}/{questions.length}
+        </p>
+        <p>Score : {correct}</p>
+      </div>
       <article className="container">
-        <h2 dangerouslySetInnerHTML={{ __html: question }} />
+        <h5 dangerouslySetInnerHTML={{ __html: question }} />
         <div className="btn-container">
           {answers.map((answer, index) => {
             return (
@@ -35,9 +40,9 @@ const Quiz = () => {
         </div>
       </article>
       <button className="next-question" onClick={nextQuestion}>
-        next question
+        Skip Question
       </button>
-    </section>
+    </div>
   );
 };
 

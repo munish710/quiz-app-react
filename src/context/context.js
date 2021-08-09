@@ -9,8 +9,6 @@ const table = {
 
 const API_ENDPOINT = "https://opentdb.com/api.php?";
 
-const url = "";
-
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -21,6 +19,7 @@ const AppProvider = ({ children }) => {
   const [correct, setCorrect] = useState(0);
   const [error, setError] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [quizTitle, setQuizTitle] = useState("");
   const [quiz, setQuiz] = useState({
     amount: 10,
     category: "sports",
@@ -84,6 +83,7 @@ const AppProvider = ({ children }) => {
     e.preventDefault();
     const { amount, category, difficulty } = quiz;
     const url = `${API_ENDPOINT}amount=${amount}&category=${table[category]}&difficulty=${difficulty}&type=multiple`;
+    setQuizTitle(category);
     fetchQuestions(url);
   };
 
@@ -105,6 +105,8 @@ const AppProvider = ({ children }) => {
         handleChange,
         handleSubmit,
         fetchQuestions,
+        quizTitle,
+        setQuizTitle,
       }}
     >
       {children}

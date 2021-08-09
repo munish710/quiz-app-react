@@ -182,6 +182,7 @@ p {
 }
 .title {
   text-align: center;
+  color: var(--clr-primary-1);
 }
 
 /*
@@ -435,13 +436,30 @@ rules
 Quiz Questions
 ===============
 */
-
-.container h2 {
-  margin-bottom: 2rem;
-  text-align: center;
-  line-height: 1.5;
-  text-transform: none;
+.quiz {
+  width: 70vw;
+  max-width: 800px;
+  margin: auto;
 }
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.container {
+  padding: 1rem;
+}
+.btn-container {
+  margin: 0.75rem auto;
+}
+
+.container h5 {
+  min-height: 4rem;
+}
+
 .answer-btn {
   display: block;
   width: 100%;
@@ -456,8 +474,22 @@ Quiz Questions
   padding: 0.5rem 0;
   transition: var(--transition);
 }
+
+.correct-answer {
+  background: var(--clr-green-dark);
+  color: var(--clr-white);
+}
+
+.incorrect-answer {
+  background: var(--clr-red-dark);
+  color: var(--clr-white);
+}
+
 @media screen and (min-width: 576px) {
-  .answer-btn {
+  .container h5 {
+    min-height: 3rem;
+  }
+  .btn-container {
     max-width: 60%;
   }
 }
@@ -465,14 +497,7 @@ Quiz Questions
   background: var(--clr-primary-5);
   color: var(--clr-white);
 }
-.correct-answers {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  text-align: right;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  color: var(--clr-green-dark);
-}
+
 .next-question,
 .close-btn,
 .submit-btn {
