@@ -15,9 +15,9 @@ const Home = () => {
             Welcome to <span className="hero-text">QuizMe</span>
           </h3>
           <p>
-            Try various types of quizzes and test your knowledge.
+            Bored? Try various types of quizzes and test your knowledge.
             <br />
-            Explore different categories or Create your own quiz.
+            Explore different categories or create your own quiz.
           </p>
           <button className="btn">
             <Link to="/explore">Explore Now</Link>

@@ -15,6 +15,15 @@ const table = {
 
 const API_ENDPOINT = "https://opentdb.com/api.php?";
 
+const fetchRecordsFromLocal = () => {
+  const savedRecords = JSON.parse(localStorage.getItem("savedRecords"));
+  if (savedRecords) {
+    return savedRecords;
+  } else {
+    return [];
+  }
+};
+
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -25,7 +34,7 @@ const AppProvider = ({ children }) => {
   const [error, setError] = useState(false);
   const [quizTitle, setQuizTitle] = useState("");
   const [currentQuizUrl, setCurrentQuizUrl] = useState("");
-  const [resultsRecord, setResultsRecord] = useState([]);
+  const [resultsRecord, setResultsRecord] = useState(fetchRecordsFromLocal());
   const [quiz, setQuiz] = useState({
     amount: 10,
     category: "sports",
@@ -74,6 +83,7 @@ const AppProvider = ({ children }) => {
     const value = e.target.value;
     setQuiz({ ...quiz, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const { amount, category, difficulty } = quiz;
@@ -81,6 +91,10 @@ const AppProvider = ({ children }) => {
     setQuizTitle(category);
     fetchQuestions(url);
   };
+
+  useEffect(() => {
+    localStorage.setItem("savedRecords", JSON.stringify(resultsRecord));
+  }, [resultsRecord]);
 
   return (
     <AppContext.Provider
