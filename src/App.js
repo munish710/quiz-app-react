@@ -8,26 +8,10 @@ import Dashboard from "./pages/Dashboard";
 import Quiz from "./pages/Quiz";
 import Error from "./pages/Error";
 import Result from "./pages/Result";
-
-import SetupForm from "./components/SetupForm";
-import Loading from "./components/Loading";
-import Modal from "./components/Modal";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 function App() {
-  const { waiting, isLoading } = useGlobalContext();
-  // if (waiting) {
-  //   return <SetupForm />;
-  // }
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
-
   return (
-    // <main>
-    //   <Modal />
-    //   <Quiz />
-    // </main>
     <>
       <Navbar />
       <Switch>
