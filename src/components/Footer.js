@@ -17,6 +17,7 @@ const Footer = () => {
             href="https://github.com/munish710"
             target="_blank"
             className="footer-icon"
+            rel="noopener noreferrer"
           >
             <AiOutlineGithub />
           </a>
@@ -24,6 +25,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/munish-thakur-a14078190/"
             target="_blank"
             className="footer-icon"
+            rel="noopener noreferrer"
           >
             <AiOutlineLinkedin />
           </a>
@@ -31,6 +33,7 @@ const Footer = () => {
             href="https://twitter.com/munish710"
             target="_blank"
             className="footer-icon"
+            rel="noopener noreferrer"
           >
             <AiOutlineTwitter />
           </a>

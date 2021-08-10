@@ -24,6 +24,7 @@ const Result = () => {
     let tempRecords = [...resultsRecord];
     tempRecords.push(newResult);
     setResultsRecord(tempRecords);
+    // eslint-disable-next-line
   }, []);
 
   return (
