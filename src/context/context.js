@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useContext, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 const table = {
   sports: 21,
@@ -26,6 +27,7 @@ const AppProvider = ({ children }) => {
     difficulty: "easy",
   });
 
+  const history = useHistory();
   const fetchQuestions = async (url) => {
     setIsLoading(true);
     setWaiting(false);
@@ -50,7 +52,7 @@ const AppProvider = ({ children }) => {
     setIndex((oldIndex) => {
       const index = oldIndex + 1;
       if (index > questions.length - 1) {
-        openModal();
+        history.push("/result");
         return 0;
       } else {
         return index;

@@ -1,12 +1,13 @@
 import React from "react";
 import { useGlobalContext } from "./context/context";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import Dashboard from "./pages/Dashboard";
 import Quiz from "./pages/Quiz";
 import Error from "./pages/Error";
+import Result from "./pages/Result";
 
 import SetupForm from "./components/SetupForm";
 import Loading from "./components/Loading";
@@ -27,7 +28,7 @@ function App() {
     //   <Modal />
     //   <Quiz />
     // </main>
-    <Router>
+    <>
       <Navbar />
       <Switch>
         <Route path="/" exact>
@@ -42,12 +43,15 @@ function App() {
         <Route path="/dashboard" exact>
           <Dashboard />
         </Route>
+        <Route path="/result" exact>
+          <Result />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
       </Switch>
       <Footer />
-    </Router>
+    </>
   );
 }
 
