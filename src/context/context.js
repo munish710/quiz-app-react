@@ -21,6 +21,8 @@ const AppProvider = ({ children }) => {
   const [error, setError] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [quizTitle, setQuizTitle] = useState("");
+  const [currentQuizUrl, setCurrentQuizUrl] = useState("");
+  const [resultsRecord, setResultsRecord] = useState([]);
   const [quiz, setQuiz] = useState({
     amount: 10,
     category: "sports",
@@ -29,6 +31,7 @@ const AppProvider = ({ children }) => {
 
   const history = useHistory();
   const fetchQuestions = async (url) => {
+    setCurrentQuizUrl(url);
     setIsLoading(true);
     setWaiting(false);
     const response = await axios(url).catch((err) => console.log(err));
@@ -110,6 +113,9 @@ const AppProvider = ({ children }) => {
         fetchQuestions,
         quizTitle,
         setQuizTitle,
+        currentQuizUrl,
+        resultsRecord,
+        setResultsRecord,
       }}
     >
       {children}

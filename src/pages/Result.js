@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGlobalContext } from "../context/context";
 import { Link } from "react-router-dom";
 
 const Result = () => {
-  const { correct, questions, setCorrect } = useGlobalContext();
+  const {
+    correct,
+    questions,
+    setCorrect,
+    currentQuizUrl,
+    resultsRecord,
+    setResultsRecord,
+    quizTitle,
+  } = useGlobalContext();
   const correct_percent = ((correct / questions.length) * 100).toFixed(0);
+  let newResult = {
+    score: correct * 4,
+    url: currentQuizUrl,
+    result: correct_percent,
+    title: quizTitle,
+  };
+
+  useEffect(() => {
+    let tempRecords = [...resultsRecord];
+    tempRecords.push(newResult);
+    setResultsRecord(tempRecords);
+  }, []);
+
   return (
     <section className="section page">
       <div className="rules">
