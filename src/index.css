@@ -180,6 +180,12 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
+
+.btn-center {
+  display: block;
+  margin: 0.25rem auto;
+}
+
 .title {
   text-align: center;
   color: var(--clr-primary-1);

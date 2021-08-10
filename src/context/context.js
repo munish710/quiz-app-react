@@ -97,6 +97,7 @@ const AppProvider = ({ children }) => {
         questions,
         index,
         correct,
+        setCorrect,
         error,
         isModalOpen,
         nextQuestion,

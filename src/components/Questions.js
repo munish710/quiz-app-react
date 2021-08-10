@@ -20,9 +20,9 @@ const Quiz = () => {
       <h3 className="title">{quizTitle}</h3>
       <div className="quiz-header">
         <p>
-          Q: {index + 1}/{questions.length}
+          Q : {index + 1}/{questions.length}
         </p>
-        <p>Score : {correct}</p>
+        <p>Score : {correct * 4}</p>
       </div>
       <article className="container">
         <h5 dangerouslySetInnerHTML={{ __html: question }} />
