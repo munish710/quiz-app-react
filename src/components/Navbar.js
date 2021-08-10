@@ -58,7 +58,7 @@ function Navbar() {
               <span className="generic-icon">
                 <AiOutlineBarChart />
               </span>
-              Personal Best
+              Dashboard
             </Link>
           </li>
         </ul>

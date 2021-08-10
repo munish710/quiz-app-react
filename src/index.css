@@ -387,7 +387,8 @@ Hero
 }
 
 .hero-info {
-  padding-left: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .hero-image {

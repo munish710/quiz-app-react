@@ -1,5 +1,6 @@
 import React from "react";
-import questions from "../assets/illustrations/questions.svg";
+import team_work from "../assets/illustrations/team_work.svg";
+
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
     <section className="section page hero">
       <div className="section-center hero-center">
         <div className="hero-image-container">
-          <img src={questions} alt="questions" className="hero-image" />
+          <img src={team_work} alt="questions" className="hero-image" />
         </div>
         <div className="hero-info">
           <h3>
