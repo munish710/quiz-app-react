@@ -5,7 +5,7 @@ import App from "./App";
 import { AppProvider } from "./context/context";
 import { BrowserRouter } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
-
+import SnackbarProvider from "react-simple-snackbar";
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
@@ -16,7 +16,9 @@ ReactDOM.render(
     >
       <BrowserRouter>
         <AppProvider>
-          <App />
+          <SnackbarProvider>
+            <App />
+          </SnackbarProvider>
         </AppProvider>
       </BrowserRouter>
     </Auth0Provider>

@@ -10,6 +10,8 @@ import Error from "./pages/Error";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProtectedRoute from "./components/ProtectedRoute";
+
 function App() {
   return (
     <>
@@ -24,9 +26,9 @@ function App() {
         <Route path="/quiz" exact>
           <Quiz />
         </Route>
-        <Route path="/dashboard" exact>
+        <ProtectedRoute path="/dashboard" exact>
           <Dashboard />
-        </Route>
+        </ProtectedRoute>
         <Route path="/result" exact>
           <Result />
         </Route>
