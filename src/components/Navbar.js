@@ -41,7 +41,7 @@ function Navbar() {
             <Link
               className="nav-link"
               to="/"
-              onClick={() => setShowNavLinks(!showNavLinks)}
+              onClick={() => setShowNavLinks(false)}
             >
               <span className="generic-icon">
                 <AiOutlineHome />
@@ -53,7 +53,7 @@ function Navbar() {
             <Link
               className="nav-link"
               to="/dashboard"
-              onClick={() => setShowNavLinks(!showNavLinks)}
+              onClick={() => setShowNavLinks(false)}
             >
               <span className="generic-icon">
                 <AiOutlineBarChart />

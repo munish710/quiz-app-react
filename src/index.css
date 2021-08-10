@@ -512,9 +512,7 @@ Quiz Questions
   color: var(--clr-white);
 }
 
-.next-question,
-.close-btn,
-.submit-btn {
+.next-question {
   border-radius: var(--radius);
   border-color: transparent;
   padding: 0.25rem 0.5rem;
@@ -531,10 +529,9 @@ Quiz Questions
   transition: var(--transition);
   cursor: pointer;
 }
-.next-question,
-.submit-btn:hover {
+.next-question:hover {
   background: #f5d07c;
-  /* color: var(--clr-white); */
+  /* color: var(--clr-grey-4); */
 }
 
 /*
