@@ -1,11 +1,12 @@
 import React from "react";
+import EmptyDashboard from "../components/EmptyDashboard";
 import ProgressCard from "../components/ProgressCard";
 import { useGlobalContext } from "../context/context";
 
 const Dashboard = () => {
   const { resultsRecord } = useGlobalContext();
 
-  return (
+  return resultsRecord.length > 0 ? (
     <section className="section page">
       <div className="section-center dashboard">
         <h2 className="title">Personal Progress</h2>
@@ -14,6 +15,8 @@ const Dashboard = () => {
         })}
       </div>
     </section>
+  ) : (
+    <EmptyDashboard />
   );
 };
 
