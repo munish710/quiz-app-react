@@ -17,9 +17,14 @@ const Result = () => {
         <p>Score = {correct * 4}</p>
         <p>Correct Answers = {correct}</p>
         <p>Incorrect Answers = {questions.length - correct}</p>
-        <button className="btn btn-center" onClick={() => setCorrect(0)}>
-          <Link to="/quiz">Retake Quiz</Link>
-        </button>
+        <div className="result-btn-container">
+          <button className="btn" onClick={() => setCorrect(0)}>
+            <Link to="/quiz">Retake Quiz</Link>
+          </button>
+          <button className="btn">
+            <Link to="/explore">Try other Quiz</Link>
+          </button>
+        </div>
       </div>
     </section>
   );
