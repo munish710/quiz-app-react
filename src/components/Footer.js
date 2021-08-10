@@ -13,13 +13,25 @@ const Footer = () => {
           Made with <span className="code">&lt;/&gt;</span> by Munish Thakur
         </p>
         <div className="footer-icons">
-          <a href="" target="_blank" className="footer-icon">
+          <a
+            href="https://github.com/munish710"
+            target="_blank"
+            className="footer-icon"
+          >
             <AiOutlineGithub />
           </a>
-          <a href="" target="_blank" className="footer-icon">
+          <a
+            href="https://www.linkedin.com/in/munish-thakur-a14078190/"
+            target="_blank"
+            className="footer-icon"
+          >
             <AiOutlineLinkedin />
           </a>
-          <a href="" target="_blank" className="footer-icon">
+          <a
+            href="https://twitter.com/munish710"
+            target="_blank"
+            className="footer-icon"
+          >
             <AiOutlineTwitter />
           </a>
         </div>
