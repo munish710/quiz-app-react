@@ -4,14 +4,22 @@ import "./index.css";
 import App from "./App";
 import { AppProvider } from "./context/context";
 import { BrowserRouter } from "react-router-dom";
+import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <AppProvider>
-        <App />
-      </AppProvider>
-    </BrowserRouter>
+    <Auth0Provider
+      domain={process.env.REACT_APP_AUTH_DOMAIN}
+      clientId={process.env.REACT_APP_AUTH_CLIENTID}
+      redirectUri={window.location.origin}
+      cacheLocation="localstorage"
+    >
+      <BrowserRouter>
+        <AppProvider>
+          <App />
+        </AppProvider>
+      </BrowserRouter>
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

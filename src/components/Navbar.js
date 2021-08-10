@@ -8,9 +8,11 @@ import {
 } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Navbar() {
   const [showNavLinks, setShowNavLinks] = useState(false);
+  const { user, loginWithRedirect, logout } = useAuth0();
 
   return (
     <nav className="navbar">
@@ -62,15 +64,18 @@ function Navbar() {
         </ul>
 
         <div className={showNavLinks ? "nav-footer show" : "nav-footer"}>
-          {true ? (
-            <button className="nav-link nav-btn">
+          {user ? (
+            <button
+              className="nav-link nav-btn"
+              onClick={() => logout({ returnTo: window.location.origin })}
+            >
               <span className="generic-icon">
                 <AiOutlineLogout />
               </span>
               Logout
             </button>
           ) : (
-            <button className="nav-link nav-btn">
+            <button className="nav-link nav-btn" onClick={loginWithRedirect}>
               <span className="generic-icon">
                 <AiOutlineLogin />
               </span>
