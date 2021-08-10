@@ -1,5 +1,6 @@
 import React from "react";
 import error_404 from "../assets/illustrations/error_404.svg";
+import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <section className="section page hero">
@@ -10,7 +11,9 @@ const Error = () => {
         <div className="hero-info">
           <h3>Page not Found</h3>
           <p>Sorry, the page you are looking for is not available.</p>
-          <button className="btn">Go Back</button>
+          <button className="btn">
+            <Link to="/">Go Back</Link>
+          </button>
         </div>
       </div>
     </section>
