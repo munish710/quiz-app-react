@@ -6,6 +6,11 @@ const table = {
   sports: 21,
   history: 23,
   politics: 24,
+  books: 10,
+  videogames: 15,
+  mythology: 20,
+  celebrities: 26,
+  vehicles: 28,
 };
 
 const API_ENDPOINT = "https://opentdb.com/api.php?";
