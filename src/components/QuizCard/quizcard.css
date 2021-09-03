@@ -1,0 +1,31 @@
+.quiz-card {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  min-height: 25rem;
+  width: 330px;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+img {
+  display: block;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  height: 15rem;
+  width: 330px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 0.5rem;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.card-footer > p {
+  margin-bottom: 0;
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../../context/context";
 import { Link } from "react-router-dom";
+import "./setupform.css";
 
 const SetupForm = () => {
   const { quiz, handleChange, handleSubmit, error } = useGlobalContext();

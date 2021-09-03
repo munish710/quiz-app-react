@@ -1,5 +1,6 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../../context/context";
+import "./questions.css";
 
 const Quiz = () => {
   const { questions, index, correct, nextQuestion, checkAnswer, quizTitle } =

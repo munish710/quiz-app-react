@@ -1,5 +1,6 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../../context/context";
+import "./rules.css";
 
 const Rules = ({ setShowRules }) => {
   const { questions } = useGlobalContext();

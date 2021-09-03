@@ -1,6 +1,7 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../../context/context";
 import { Link } from "react-router-dom";
+import "./quizcard.css";
 
 const QuizCard = ({ image_url, title, info, questions, quiz_url }) => {
   const { fetchQuestions, setQuizTitle } = useGlobalContext();

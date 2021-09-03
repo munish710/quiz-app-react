@@ -1,6 +1,6 @@
 import React from "react";
-import EmptyDashboard from "../components/EmptyDashboard";
-import ProgressCard from "../components/ProgressCard";
+import EmptyDashboard from "../components/EmptyDashboard/EmptyDashboard";
+import ProgressCard from "../components/ProgressCard/ProgressCard";
 import { useGlobalContext } from "../context/context";
 
 const Dashboard = () => {

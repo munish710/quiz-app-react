@@ -1,6 +1,7 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
+import { useGlobalContext } from "../../context/context";
 import { Link } from "react-router-dom";
+import "./progresscard.css";
 
 const ProgressCard = ({ score, url, result, title }) => {
   const { fetchQuestions } = useGlobalContext();

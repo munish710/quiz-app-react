@@ -1,0 +1,52 @@
+.setup-form {
+  padding: 1rem;
+  padding-top: 2rem;
+}
+.form-control {
+  margin-bottom: 2rem;
+}
+.form-control label {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  border: none;
+  outline: none;
+  background: var(--clr-grey-10);
+  font-size: 1rem;
+  padding: 0.45rem 0.5rem;
+  width: 100%;
+  border-radius: var(--radius);
+}
+.error {
+  color: var(--clr-red-dark);
+  text-transform: capitalize;
+}
+.submit-btn {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .form-control {
+    display: flex;
+    align-items: center;
+  }
+  .form-control label {
+    font-size: 1.125rem;
+    width: 50%;
+  }
+
+  .form-input {
+    width: 50%;
+  }
+  .submit-btn {
+    width: 10rem;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+}

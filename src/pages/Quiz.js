@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Rules from "../components/Rules";
-import Questions from "../components/Questions";
+import Rules from "../components/Rules/Rules";
+import Questions from "../components/Questions/Questions";
 import { useGlobalContext } from "../context/context";
-import Loading from "../components/Loading";
+import Loading from "../components/Loading/Loading";
 
 const Quiz = () => {
   const [showRules, setShowRules] = useState(true);

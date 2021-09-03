@@ -1,6 +1,6 @@
 import React from "react";
-import QuizCard from "../components/QuizCard";
-import SetupForm from "../components/SetupForm";
+import QuizCard from "../components/QuizCard/QuizCard";
+import SetupForm from "../components/SetupForm/SetupForm";
 import { trending } from "../utils/mockData";
 
 //url for diff quiz cards

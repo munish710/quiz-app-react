@@ -29,7 +29,7 @@ const Result = () => {
 
   return (
     <section className="section page">
-      <div className="rules">
+      <div className="result">
         <h4>
           {correct_percent > 59
             ? "Congratulations you won! "
