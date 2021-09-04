@@ -81,6 +81,10 @@
   font-size: 1.5rem;
 }
 
+.logo > a {
+  color: var(--clr-primary-1);
+}
+
 .nav-link:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);

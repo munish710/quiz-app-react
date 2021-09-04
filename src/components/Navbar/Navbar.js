@@ -23,7 +23,8 @@ function Navbar() {
             <span className="generic-icon">
               <AiOutlineQuestionCircle />
             </span>
-            QuizMe
+
+            <Link to="/">QuizMe</Link>
           </div>
           <div className="button-wrapper">
             <button
