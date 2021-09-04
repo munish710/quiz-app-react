@@ -1,0 +1,33 @@
+.progress-card {
+  width: 70%;
+  margin: 1.5rem auto;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-primary-5);
+  padding: 1rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+
+.progress-card:hover {
+  transform: scale(1.02);
+}
+
+.result-tag {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+}
+
+.pass-tag {
+  background: var(--clr-green-dark);
+  color: var(--clr-white);
+}
+
+.fail-tag {
+  background: var(--clr-red-light);
+  color: var(--clr-white);
+}

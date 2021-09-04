@@ -1,10 +1,11 @@
 import React from "react";
+import "./loading.css";
 
 const Loading = () => {
   return (
-    <main>
+    <section className="section page">
       <div className="loading"></div>
-    </main>
+    </section>
   );
 };
 
