@@ -90,6 +90,7 @@ const AppProvider = ({ children }) => {
     const url = `${API_ENDPOINT}amount=${amount}&category=${table[category]}&difficulty=${difficulty}&type=multiple`;
     setQuizTitle(category);
     fetchQuestions(url);
+    history.push("/quiz");
   };
 
   useEffect(() => {

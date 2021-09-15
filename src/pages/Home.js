@@ -19,9 +19,10 @@ const Home = () => {
             <br />
             Explore different categories or create your own quiz.
           </p>
-          <button className="btn">
-            <Link to="/explore">Explore Now</Link>
-          </button>
+
+          <Link to="/explore" className="btn">
+            Explore Now
+          </Link>
         </div>
       </div>
     </section>

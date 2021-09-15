@@ -13,9 +13,10 @@ const ProgressCard = ({ score, url, result, title }) => {
     <article className="progress-card">
       <div className="main-info">
         <h4>{title}</h4>
-        <button className="btn" onClick={retakeQuiz}>
-          <Link to="/quiz">Retake Quiz</Link>
-        </button>
+
+        <Link to="/quiz" className="btn" onClick={retakeQuiz}>
+          Retake Quiz
+        </Link>
       </div>
       <div className="result-info">
         {result > 59 ? (

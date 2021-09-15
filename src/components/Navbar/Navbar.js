@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  AiOutlineHome,
+  AiOutlineSearch,
   AiOutlineBarChart,
   AiOutlineLogout,
   AiOutlineLogin,
@@ -42,13 +42,13 @@ function Navbar() {
           <li>
             <Link
               className="nav-link"
-              to="/"
+              to="/explore"
               onClick={() => setShowNavLinks(false)}
             >
               <span className="generic-icon">
-                <AiOutlineHome />
+                <AiOutlineSearch />
               </span>
-              Home
+              Explore
             </Link>
           </li>
           <li>

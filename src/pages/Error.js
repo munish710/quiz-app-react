@@ -11,9 +11,10 @@ const Error = () => {
         <div className="hero-info">
           <h3>Page not Found</h3>
           <p>Sorry, the page you are looking for is not available.</p>
-          <button className="btn">
-            <Link to="/">Go Back</Link>
-          </button>
+
+          <Link to="/" className="btn">
+            Go Back
+          </Link>
         </div>
       </div>
     </section>
