@@ -20,10 +20,10 @@ const Quiz = () => {
     <div className="quiz">
       <h3 className="title">{quizTitle}</h3>
       <div className="quiz-header">
-        <p>
+        <h5>
           Q : {index + 1}/{questions.length}
-        </p>
-        <p>Score : {correct * 4}</p>
+        </h5>
+        <h5>Score : {correct * 4}</h5>
       </div>
       <article className="container">
         <h5 dangerouslySetInnerHTML={{ __html: question }} />
