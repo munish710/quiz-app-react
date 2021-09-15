@@ -1,6 +1,5 @@
 import React from "react";
 import { useGlobalContext } from "../../context/context";
-import { Link } from "react-router-dom";
 import "./setupform.css";
 
 const SetupForm = () => {
@@ -65,7 +64,7 @@ const SetupForm = () => {
           </p>
         )}
         <button type="submit" onClick={handleSubmit} className="btn">
-          <Link to="/quiz">Take Quiz</Link>
+          Take Quiz
         </button>
       </form>
     </div>

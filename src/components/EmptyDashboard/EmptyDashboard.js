@@ -12,9 +12,10 @@ const EmptyDashboard = () => {
         <div className="hero-info">
           <h3>No Records yet</h3>
           <p>You haven't taken any quizzes yet.</p>
-          <button className="btn">
-            <Link to="/explore">Explore Quizzes</Link>
-          </button>
+
+          <Link to="/explore" className="btn">
+            Explore Quizzes
+          </Link>
         </div>
       </div>
     </section>

@@ -18,9 +18,10 @@ const QuizCard = ({ image_url, title, info, questions, quiz_url }) => {
       </div>
       <div className="card-footer">
         <p>{questions} questions</p>
-        <button className="btn" onClick={setupQuiz}>
-          <Link to="/quiz">Take Quiz</Link>
-        </button>
+
+        <Link to="/quiz" className="btn" onClick={setupQuiz}>
+          Take Quiz
+        </Link>
       </div>
     </article>
   );
